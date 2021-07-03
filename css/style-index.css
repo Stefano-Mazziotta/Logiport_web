@@ -1,0 +1,805 @@
+* {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html {
+
+	scroll-behavior: smooth;
+}
+
+.menu_bar {
+
+	display: none;
+}
+
+/* ------ HEADER ------ */
+.banner_imagen {
+
+	width: 100%;
+	height: 86vh;
+	background-image: url(../components/imagenes/Portada/BARCO.JPG);
+	background-attachment:fixed;
+	background-size:cover;
+	margin-bottom: 50px;
+}
+
+.banner_opacity {
+
+	background: rgba(0,0,0,.4);
+	height: 86vh;
+	width: 100%;
+	display: flex;
+}
+
+/* ------ NAV ------ */
+.container-header {
+
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	height: 25%;
+	justify-content:space-between;
+}
+
+.container-header .container-image .logo-image {
+
+	width: 80%;
+	padding: 80px;
+}
+
+header .container-header nav {
+	width: 40%;
+	font-weight: bold;
+	margin-top: 133px;
+}
+
+header nav ul {
+
+	list-style: none;
+	box-shadow: 10px 10px 30px grey;
+	padding: 10px;
+	background-color: #150d2d;
+	border-radius: 5px;
+}
+
+header nav ul li {
+
+	display: inline-block;
+	position: relative;
+}
+
+header nav ul li a {
+
+	color:#f2f2f2;
+	display: inline-block;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+header nav ul a:hover {
+
+	color:#DBE6FD;
+	border-bottom:#DBE6FD solid 1px;
+}
+
+header nav ul .sub-menu__link:hover {
+	background-color: #150d2d;
+	color: #DBE6FD;
+	transition: 0s;
+}
+
+header nav ul li:hover .sub-menu__content {
+
+	display: block;
+}
+
+.sub-menu__content {
+
+	display: none;
+	position: absolute;
+	background-color: #150d2d;
+	min-width: 185px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	padding: 0px;
+	margin: 0px;
+}
+
+header nav ul li .sub-menu__content li {
+
+	display: block;
+	overflow: hidden;
+}
+
+.sub-menu__content li a {
+
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+/* ------ /NAV ------ */
+/* ------ /HEADER ------ */
+
+/* ------ ESTRUCTURA PÁGINA ------*/
+.main {
+
+	width: 75%;
+	height: 100%;
+	margin-right: 12.5%;
+	margin-left: 12.5%;
+}
+
+/* ------ QUIENES SOMOS ------ */
+.container-column {
+
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	margin-bottom: 60px;
+}
+
+.column-text-qs {
+
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px 0 20px;
+	line-height: 1.7;
+	letter-spacing: 0.5px;
+	font-size: 20px;
+}
+
+.column-text__title {
+
+	color: #150d2d;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.column-text__item {
+
+	font-size: 22px;
+	margin-right: 10px;
+	color: #150d2d
+}
+
+.column-image-qs {
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 50%;
+}
+
+ .column-image-qs__img {
+
+	height: 100%;
+	width: 65%;
+	margin-left: auto;
+	border-radius: 10px;
+	box-shadow: 10px 10px 30px grey;
+}
+/* ------ /QUIENES SOMOS ------ */
+
+/* ------ TARJETAS SERVICIOS ------ */
+.container-column-servicio {
+
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.column-servicio {
+
+	width: 40%;
+	background-color: white;
+	box-shadow: 10px 10px 30px grey;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 80px;
+	transition: 0.6s;
+	border-radius: 10px;
+}
+
+.column-servicio:hover {
+
+	transition: 0.6s;
+	box-shadow: 20px 20px 85px grey;
+
+}
+
+.column-text__title2 {
+
+	color: #150d2d;
+	font-size: 26px;
+	margin-bottom: 5%;
+}
+
+.column-servicio__img {
+
+	width: 100%;
+	max-height: 372px;
+	margin-bottom: 5%;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.fix{
+
+	height: 100%;
+}
+
+
+.column-servicio__subtitle {
+
+	color: #150d2d;
+	font-size: 24px;
+	margin-left: 4%;
+	margin-bottom: 1.5%;
+}
+
+.column-servicio__subrayado-subtitle {
+
+	height: 2px;
+	width: 30%;
+	background: #150d2d;
+	margin-left: 4%;
+	margin-bottom: 3%;
+}
+
+.column-servicio__text {
+
+	margin-right: 4%;
+	margin-left: 4%;
+	margin-bottom: 10%;
+	letter-spacing: 0.7px;
+	line-height: 1.5;
+	font-size: 15px;
+}
+
+.column-servicio__button {
+
+	vertical-align:middle;
+	display: inline-block;
+  	border-radius: 4px;
+  	background-color: #150d2d ;
+  	border: none;
+	width: 43%;
+	padding: 1.5%;
+  	cursor: pointer;
+	margin-left: 4%;
+	margin-bottom: 10%;
+}
+
+.column-servicio__button--movimiento {
+
+	cursor: pointer;
+  	display: inline-block;
+  	position: relative;
+  	transition: 0.5s;
+}
+
+.column-servicio__button--movimiento::after {
+
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -3%;
+	transition: 0.5s;
+}
+
+.column-servicio__button:hover .column-servicio__button--movimiento {
+
+	padding-right: 17%;
+}
+
+.column-servicio__button:hover .column-servicio__button--movimiento:after{
+
+	opacity: 1;
+	right: 0;
+}
+
+.column-servicio__link {
+
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 22px;
+
+}
+/* ------ /TARJETAS SERVICIOS ------ */
+
+/* ------ MISIÓN _ VALORES _ VISIÓN ------ */
+.container-column-MVV {
+
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	margin-bottom: 60px;
+}
+
+.column-MVV {
+
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	padding: 0 20px 0 20px;
+	line-height: 1.7;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 30px grey;
+	padding: 2%;
+	background-color:#150d2d;
+	color: white;
+	font-size: 16px;
+}
+.fix-margin-bottom {
+	margin-bottom: 0;
+}
+
+.column-MVV:hover{
+
+	transition: 0.6s;
+	box-shadow: 20px 20px 85px grey;
+}
+
+.column-MVV__subtitle {
+
+	font-size: 28px;
+	color: white;
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+
+.column-MVV__subrayado-subtitle {
+
+	height: 2px;
+	width: 75%;
+	background: white ;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.column-MMV__text {
+
+	text-align: center;
+	letter-spacing: 0.5px;
+	padding: 20px;
+	font-size: 20px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.separador {
+
+	height: 60px;
+	width: 100%;
+	background: #150d2d;
+	margin-bottom: 60px;
+}
+/* ------ /MISIÓN _ VALORES _ VISIÓN ------ */
+
+/* ------ CONTACTO ------ */
+.container-column-contacto {
+
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	margin-bottom: 5%;
+}
+
+.column-contacto__form {
+
+	width: 50%;
+}
+
+.column-contacto__input {
+
+	width: 100%;
+	height: 10%;
+	margin-bottom: 5%;
+	padding: 10px 7px;
+	border: 3px solid #ccc;
+	transition: 0.5s;
+  	outline: none;
+}
+
+.column-contacto__input:focus {
+
+	border: 3px solid #150d2d;
+}
+
+.column-contacto__button{
+
+	background-color: #150d2d;
+	border: none;
+	color: white;
+	padding: 8px 32px;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 16px;
+	opacity: 0.8;
+	transition: 0.3s;
+	text-decoration: none;
+	cursor: pointer;
+	float: right;
+}
+
+.column-contacto__button:hover{
+
+	opacity: 1;
+}
+
+.containercolumn-contacto__img {
+
+	width: 50%;
+	margin-bottom: 60px;
+}
+
+.column-contacto__img {
+
+	width: 60%;
+	height: 100%;
+	margin-left: 40%;
+	border-radius: 10px;
+	box-shadow: 10px 10px 30px grey;
+}
+/* ------ /CONTACTO ------ */
+
+/* ------ FOOTER ------ */
+.container-footer{
+
+	width: 100%;
+	height: 150px;
+	background-color: #150d2d;;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.footer__title {
+
+	font-size: 18px;
+	color: #f2f2f2;
+	margin-right: auto;
+	margin-left: auto;
+	letter-spacing: 2px;
+    text-align: center;
+    padding: 0px 50px;
+    line-height: 20px;
+}
+/* ------ /FOOTER ------ */
+
+/* ------ RESPONSIVE ------ */
+/* ------ (min-width = 1351px) & (max-width = 1550px)  ------ */
+@media screen and (min-width:1351px) and (max-width: 1550px){
+
+	.container-column {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.column-text-qs {
+
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
+	.column-image-qs__img {
+
+		width: 100%;
+		height: 70%;
+	}
+}
+/* ------ /(min-width = 1351px) & (max-width = 1550px)  ------ */
+
+/* ------ (min-width = 1015px) & (max-width = 1350px)  ------ */
+@media screen and (min-width: 1015px) and (max-width: 1350px) {
+
+	.container-header {
+		flex-direction: column;
+	}
+
+	.container-header .container-image .logo-image {
+		width: 50%;
+		padding: 30px;
+		margin-left: 10px;
+	}
+
+	header .container-header nav {
+		width: 100%;
+		font-weight: bold;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	header .container-header nav ul {
+		margin-left: 0px;
+	}
+
+	.container-column {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.column-text-qs {
+
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
+	.column-image-qs__img {
+
+		width: 100%;
+		height: 70%;
+	}
+
+	.container-column-MVV {
+
+		flex-direction: column;
+	}
+
+	.column-MVV {
+
+		width: 100%;
+	}
+
+	.column-MVV__subrayado-subtitle {
+
+		width: 25%;
+	}
+
+	.column-MMV__text {
+		padding:30px;
+	}
+
+	.container-column-servicio {
+
+		flex-direction: column;
+		align-content: none;
+		justify-content: none;
+	}
+
+	.column-servicio {
+
+		width: 100%;
+		flex-direction: row;
+
+	}
+
+	.column-servicio__img {
+
+		width: 60%;
+		height: 100%;
+		margin-bottom: 0px;
+		border-radius: 10px 0px 0px 10px;
+	}
+
+	.column-servicio__content {
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	.column-servicio__subtitle {
+
+		margin-top: 4%;
+		margin-bottom: 2%;
+		font-size: 22px
+	}
+
+	.column-servicio__subrayado-subtitle {
+
+		width: 20%;
+		margin-bottom: 3%;
+	}
+
+	.column-servicio__text {
+
+		margin-bottom: 10%;
+		padding: 5px;
+	}
+
+	.column-servicio__button {
+
+		margin-bottom: 5%;
+		width: 50%;
+		margin-left: auto;
+		margin-right: 4%;
+	}
+
+	.container-column-contacto {
+
+		flex-direction: column;
+	}
+
+	.column-contacto__form {
+
+		width: 100%;
+		margin-bottom: 10%;
+	}
+
+	.containercolumn-contacto__img {
+
+		display: none;
+	}
+}
+/* ------ /(min-width = 1015px) & (max-width = 1350px)  ------ */
+
+/* ------ (max-width = 1014px)  ------ */
+@media screen and (max-width: 1014px) {
+
+	/* --- HEADER --- */
+	.container-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.container-header .container-image .logo-image {
+		width: 100%;
+		padding: 30px;
+
+	}
+
+	header .container-header nav {
+		width: 100%;
+		font-weight: bold;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	header .container-header nav ul {
+		box-shadow: none;
+	}
+	/* --- /HEADER --- */
+
+	/* ------ CUERPO PÁGINA ------ */
+	.main {
+
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	/* --- QUIENES SOMOS --- */
+	.column-image-qs {
+
+		display: none;
+	}
+
+	.column-text__title {
+
+		font-size: 28px;
+	}
+
+	.column-text-qs {
+
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 0 10px 0 10px;
+		line-height: 1.8;
+		font-size: 17px;
+	}
+
+	.container-column {
+
+		flex-direction: column;
+	}
+	/* --- /QUIENES SOMOS --- */
+
+	/* --- MISION_VISION_VALORES --- */
+	.container-column-MVV {
+
+		flex-direction: column;
+	}
+
+	.column-MVV {
+
+		width: 100%;
+	}
+
+	.column-MVV__subrayado-subtitle {
+
+		width: 35%;
+		margin-bottom: 4%;
+	}
+	/* --- /MISION_VISION_VALORES --- */
+
+	/* --- SERVICIOS --- */
+	.column-text__title2 {
+
+		font-size: 28px;
+		margin-bottom: 10%;
+	}
+
+	.container-column-servicio {
+
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.column-servicio {
+
+		width: 100%;
+		box-shadow: 5px 5px 15px grey;
+	}
+
+	.column-servicio__subtitle {
+
+		margin-bottom: 2%;
+	}
+
+	.column-servicio__subrayado-subtitle {
+
+		margin-bottom: 3%;
+		width: 26%;
+	}
+
+	.column-servicio__text {
+
+		line-height: 1.4;
+		font-size: 16px;
+	}
+	/* --- /SERVICIOS --- */
+
+	/* --- CONTACTO --- */
+	.container-column-contacto {
+
+		flex-direction: column;
+	}
+
+	.column-contacto__img {
+
+		display: none;
+	}
+
+	.column-contacto__form {
+
+		width: 100%;
+	}
+
+	.column-contacto__input {
+
+		padding: 8px 7px;
+	}
+
+	.column-contacto__button {
+
+		margin-top: 5%;
+	}
+	/* --- /CONTACTO --- */
+	/* ------ /CUERPO PÁGINA ------ */
+
+	/* --- FOOTER --- */
+	.container-footer {
+
+		height: 175px;
+	}
+
+	.footer__title {
+
+		font-size: 16px;
+	}
+	/* --- /FOOTER --- */
+}
+/* ------ /(max-width = 1014px) ------ */
+/* -------- /RESPONSIVE -------- */

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "logiport";
+  src:url("fonts/logiport.eot");
+  src:url("fonts/logiport.eot?#iefix") format("embedded-opentype"),
+    url("fonts/logiport.woff") format("woff"),
+    url("fonts/logiport.ttf") format("truetype"),
+    url("fonts/logiport.svg#logiport") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "logiport" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "logiport" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+  content: "\61";
+}
+.icon-phone:before {
+  content: "\62";
+}
+.icon-menu:before {
+  content: "\63";
+}
