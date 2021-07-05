@@ -264,7 +264,7 @@ header nav ul li .sub-menu__content li {
 	margin-bottom: 10%;
 	letter-spacing: 0.7px;
 	line-height: 1.5;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 .column-servicio__button {
@@ -521,7 +521,6 @@ header nav ul li .sub-menu__content li {
 	.container-header .container-image .logo-image {
 		width: 50%;
 		padding: 30px;
-		margin-left: 10px;
 	}
 
 	header .container-header nav {
@@ -647,7 +646,7 @@ header nav ul li .sub-menu__content li {
 /* ------ (max-width = 1014px)  ------ */
 @media screen and (max-width: 1014px) {
 
-	/* --- HEADER --- */
+	/* --- HEADER --- */	
 	.container-header {
 		flex-direction: column;
 		align-items: center;
