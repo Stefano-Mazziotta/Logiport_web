@@ -6,19 +6,12 @@
 	-webkit-box-sizing: border-box;
 }
 
-html {
+html {scroll-behavior: smooth;}
 
-	scroll-behavior: smooth;
-}
-
-.menu_bar {
-
-	display: none;
-}
+.menu_bar {display: none;}
 
 /* ------ HEADER ------ */
 .banner_imagen {
-
 	width: 100%;
 	height: 86vh;
 	background-image: url(../components/imagenes/Portada/BARCO.JPG);
@@ -28,7 +21,6 @@ html {
 }
 
 .banner_opacity {
-
 	background: rgba(0,0,0,.4);
 	height: 86vh;
 	width: 100%;
@@ -37,7 +29,6 @@ html {
 
 /* ------ NAV ------ */
 .container-header {
-
 	width: 100%;
 	background: white;
 	display: flex;
@@ -47,7 +38,6 @@ html {
 }
 
 .container-header .container-image .logo-image {
-
 	width: 80%;
 	padding: 80px;
 }
@@ -59,7 +49,6 @@ header .container-header nav {
 }
 
 header nav ul {
-
 	list-style: none;
 	box-shadow: 10px 10px 30px grey;
 	padding: 10px;
@@ -68,13 +57,11 @@ header nav ul {
 }
 
 header nav ul li {
-
 	display: inline-block;
 	position: relative;
 }
 
 header nav ul li a {
-
 	color:#f2f2f2;
 	display: inline-block;
 	padding: 14px 16px;
@@ -83,7 +70,6 @@ header nav ul li a {
 }
 
 header nav ul a:hover {
-
 	color:#DBE6FD;
 	border-bottom:#DBE6FD solid 1px;
 }
@@ -94,13 +80,9 @@ header nav ul .sub-menu__link:hover {
 	transition: 0s;
 }
 
-header nav ul li:hover .sub-menu__content {
-
-	display: block;
-}
+header nav ul li:hover .sub-menu__content {display: block;}
 
 .sub-menu__content {
-
 	display: none;
 	position: absolute;
 	background-color: #150d2d;
@@ -112,13 +94,11 @@ header nav ul li:hover .sub-menu__content {
 }
 
 header nav ul li .sub-menu__content li {
-
 	display: block;
 	overflow: hidden;
 }
 
 .sub-menu__content li a {
-
 	color: white;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -130,7 +110,6 @@ header nav ul li .sub-menu__content li {
 
 /* ------ ESTRUCTURA PÁGINA ------*/
 .main {
-
 	width: 75%;
 	height: 100%;
 	margin-right: 12.5%;
@@ -139,7 +118,6 @@ header nav ul li .sub-menu__content li {
 
 /* ------ QUIENES SOMOS ------ */
 .container-column {
-
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -148,7 +126,6 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-text-qs {
-
 	width: 50%;
 	display: flex;
 	flex-direction: column;
@@ -159,21 +136,18 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-text__title {
-
 	color: #150d2d;
 	font-size: 32px;
 	margin-bottom: 20px;
 }
 
 .column-text__item {
-
 	font-size: 22px;
 	margin-right: 10px;
 	color: #150d2d
 }
 
 .column-image-qs {
-
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +155,6 @@ header nav ul li .sub-menu__content li {
 }
 
  .column-image-qs__img {
-
 	height: 100%;
 	width: 65%;
 	margin-left: auto;
@@ -192,7 +165,6 @@ header nav ul li .sub-menu__content li {
 
 /* ------ TARJETAS SERVICIOS ------ */
 .container-column-servicio {
-
 	display:flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -201,7 +173,6 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-servicio {
-
 	width: 40%;
 	background-color: white;
 	box-shadow: 10px 10px 30px grey;
@@ -213,35 +184,28 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-servicio:hover {
-
 	transition: 0.6s;
 	box-shadow: 20px 20px 85px grey;
 
 }
 
 .column-text__title2 {
-
 	color: #150d2d;
 	font-size: 26px;
 	margin-bottom: 5%;
 }
 
 .column-servicio__img {
-
 	width: 100%;
 	max-height: 372px;
 	margin-bottom: 5%;
 	border-radius: 10px 10px 0px 0px;
 }
 
-.fix{
-
-	height: 100%;
-}
+.fix{height: 100%;}
 
 
 .column-servicio__subtitle {
-
 	color: #150d2d;
 	font-size: 24px;
 	margin-left: 4%;
@@ -249,7 +213,6 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-servicio__subrayado-subtitle {
-
 	height: 2px;
 	width: 30%;
 	background: #150d2d;
@@ -258,7 +221,6 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-servicio__text {
-
 	margin-right: 4%;
 	margin-left: 4%;
 	margin-bottom: 10%;
@@ -268,7 +230,6 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-servicio__button {
-
 	vertical-align:middle;
 	display: inline-block;
   	border-radius: 4px;
@@ -282,7 +243,6 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-servicio__button--movimiento {
-
 	cursor: pointer;
   	display: inline-block;
   	position: relative;
@@ -290,7 +250,6 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-servicio__button--movimiento::after {
-
 	content: '\00bb';
 	position: absolute;
 	opacity: 0;
@@ -300,28 +259,23 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-servicio__button:hover .column-servicio__button--movimiento {
-
 	padding-right: 17%;
 }
 
 .column-servicio__button:hover .column-servicio__button--movimiento:after{
-
 	opacity: 1;
 	right: 0;
 }
 
 .column-servicio__link {
-
 	color: #FFFFFF;
 	text-align: center;
 	font-size: 22px;
-
 }
 /* ------ /TARJETAS SERVICIOS ------ */
 
 /* ------ MISIÓN _ VALORES _ VISIÓN ------ */
 .container-column-MVV {
-
     display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -331,7 +285,6 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-MVV {
-
 	display: flex;
 	flex-direction: column;
 	width: 80%;
@@ -345,18 +298,15 @@ header nav ul li .sub-menu__content li {
 	color: white;
 	font-size: 16px;
 }
-.fix-margin-bottom {
-	margin-bottom: 0;
-}
+
+.fix-margin-bottom {margin-bottom: 0;}
 
 .column-MVV:hover{
-
 	transition: 0.6s;
 	box-shadow: 20px 20px 85px grey;
 }
 
 .column-MVV__subtitle {
-
 	font-size: 28px;
 	color: white;
 	text-align: center;
@@ -365,7 +315,6 @@ header nav ul li .sub-menu__content li {
 
 
 .column-MVV__subrayado-subtitle {
-
 	height: 2px;
 	width: 75%;
 	background: white ;
@@ -375,7 +324,6 @@ header nav ul li .sub-menu__content li {
 }
 
 .column-MMV__text {
-
 	text-align: center;
 	letter-spacing: 0.5px;
 	padding: 20px;
@@ -386,7 +334,6 @@ header nav ul li .sub-menu__content li {
 }
 
 .separador {
-
 	height: 60px;
 	width: 100%;
 	background: #150d2d;
@@ -396,7 +343,6 @@ header nav ul li .sub-menu__content li {
 
 /* ------ CONTACTO ------ */
 .container-column-contacto {
-
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -405,13 +351,11 @@ header nav ul li .sub-menu__content li {
 	margin-bottom: 5%;
 }
 
-.column-contacto__form {
+.column-contacto__form {width: 50%;}
 
-	width: 50%;
-}
+.column-contacto__form form {margin-bottom: 100px;}
 
 .column-contacto__input {
-
 	width: 100%;
 	height: 10%;
 	margin-bottom: 5%;
@@ -421,13 +365,9 @@ header nav ul li .sub-menu__content li {
   	outline: none;
 }
 
-.column-contacto__input:focus {
-
-	border: 3px solid #150d2d;
-}
+.column-contacto__input:focus {border: 3px solid #150d2d;}
 
 .column-contacto__button{
-
 	background-color: #150d2d;
 	border: none;
 	color: white;
@@ -442,19 +382,20 @@ header nav ul li .sub-menu__content li {
 	float: right;
 }
 
-.column-contacto__button:hover{
+.column-contacto__button:hover{opacity: 1;}
 
-	opacity: 1;
+.column-contacto__p {
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+	font-size: 18px;
 }
 
 .containercolumn-contacto__img {
-
 	width: 50%;
 	margin-bottom: 60px;
 }
 
 .column-contacto__img {
-
 	width: 60%;
 	height: 100%;
 	margin-left: 40%;
