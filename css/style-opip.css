@@ -328,6 +328,8 @@ header nav ul li .sub-menu__content li {
 /* ------ (max-width = 1014px)  ------ */
 @media screen and (max-width: 1014px) {
 
+	.banner_imagen {background-image: url(../components/imagenes/Portada/Barco-responsive.jpg);}
+
 	.container-header {
 		flex-direction: column;
 		align-items: center;

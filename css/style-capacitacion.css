@@ -19,7 +19,7 @@ html {
 .banner_imagen {
 	width: 100%;
 	height: 86vh;
-	background-image: url(../components/imagenes/Portada/BARCO.JPG);
+	background-image: url(../components/imagenes/Portada/BARCO.jpg);
 	background-attachment:fixed;
 	background-size:cover;
 	margin-bottom: 50px;
@@ -413,6 +413,8 @@ header nav ul li .sub-menu__content li {
 
 /* ------ (max-width = 1014px)  ------ */
 @media screen and (max-width: 1014px) {
+
+	.banner_imagen {background-image: url(../components/imagenes/Portada/Barco-responsive.jpg);}
 
 	.container-header {
 		flex-direction: column;
