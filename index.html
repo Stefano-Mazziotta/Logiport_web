@@ -316,11 +316,11 @@
 
                         <h1 id="contacto" class="column-text__title2"> <span class="column-text__item">►</span>Contacto</h1>
 
-                        <form action="php/enviar.php" method="post">
+                        <form action="php/send_mail.php" method="POST">
 
-                            <input class="column-contacto__input" placeholder="Nombre y Apellido/Empresa*" type="text" name="nombre" required="true">
-                            <input class="column-contacto__input" placeholder="Email*" type="text" name="email" required="true">
-                            <input class="column-contacto__input" placeholder="Mensaje" type="text" name="mensaje"><br>
+                            <input class="column-contacto__input" placeholder="Nombre y Apellido/Empresa*" type="text" name="fullName" required="true">
+                            <input class="column-contacto__input" placeholder="Email *" type="email" name="email" required="true">
+                            <input class="column-contacto__input" placeholder="Mensaje" type="text" name="messagge"><br>
                             <button class="column-contacto__button" type="submit"><i class=""></i> Enviar </button>
                                                 
                         </form>
