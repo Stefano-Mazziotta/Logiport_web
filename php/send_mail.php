@@ -3,6 +3,7 @@
     require_once 'phpmailer/Exception.php';
     require_once 'phpmailer/PHPMailer.php';
     require_once 'phpmailer/SMTP.php';
+    require_once './config_mail.php';
 
     $mail = new PHPMailer(true);
 
@@ -15,8 +16,6 @@
 
         if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ){
 
-            $mailTo = 'contact@logiport.site';
-            $password = 'oQvsUU42';
             $subject = "Contact form from www.logiport.site";
 
             $userName = $_POST['fullName'];
@@ -48,7 +47,7 @@
                 $mail->Port = '465';
 
                 $mail->setFrom($mailTo,'logiport.site'); // Gmail adress which you want to use as SMTP server.
-                $mail->addAddress('claudiomazziotta@yahoo.com.ar'); // Email address where you want to receive emails.
+                $mail->addAddress($addAdress); // Email address where you want to receive emails.
 
                 $mail->isHTML(true);
                 $mail->Subject = $subject;
